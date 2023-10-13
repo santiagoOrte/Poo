@@ -1,8 +1,11 @@
 package veiculos;
-public abstract class Veiculo {
+
+public class Veiculo {
     String marca, modelo, propietario, placa;
     int año;
+    String type;
 
+    //constructor
     public Veiculo(String marca, String modelo, String propietario, String placa, int año) {
         this.marca = marca;
         this.modelo = modelo;
@@ -11,6 +14,7 @@ public abstract class Veiculo {
         this.año = año;
     }
     
+    //getters
     public String getMarca() {
         return marca;
     }
@@ -26,7 +30,11 @@ public abstract class Veiculo {
     public int getAño() {
         return año;
     }
-
+    public String getType() {
+        return type;
+    }
+    
+    //setter
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -43,6 +51,8 @@ public abstract class Veiculo {
         this.año = año;
     }
     
+    //metodo
     public void mostrarInformacion () {}
     
 }
+
